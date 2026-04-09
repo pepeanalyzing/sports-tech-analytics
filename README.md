@@ -1,72 +1,198 @@
 
-# 📊 **Dashboard Overview — Sports Tech Analytics**
+# 🏟️ **Sports Tech Analytics — End‑to‑End Data Project**
 
-This Power BI report is designed to simulate a real sports‑tech analytics environment, combining **platform performance**, **match & player activity**, and **user engagement** into a unified monitoring solution.  
-The dashboard is structured into **three pages**, each focused on a different operational domain.
+This project simulates a real sports‑tech analytics environment by generating synthetic platform logs, match events, and user activity data.  
+It demonstrates a full analytics workflow — from data generation and processing to KPI development and dashboard reporting.
 
----
-
-# 🟦 **1. Platform Health Dashboard**
-
-This page monitors the reliability and performance of the sports analytics platform.
-
-### **Key Metrics**
-- **Uptime %** – Measures platform reliability  
-- **Average Latency (ms)** – Tracks system responsiveness  
-- **Error Rate %** – Highlights system stability  
-
-### **Visuals**
-- **Latency Over Time (Line Chart)**  
-  Shows how system latency changes day‑to‑day, helping identify performance spikes or degradation.
-
-- **Errors by Endpoint (Bar Chart)**  
-  Reveals which API endpoints (e.g., `/login`, `/upload`, `/analytics`) generate the most errors, supporting debugging and prioritisation.
-
-### **Why It Matters**
-This page mirrors real DevOps/SRE dashboards used to ensure platform stability for coaches, analysts, and players.
+The goal is to showcase practical skills across **Python, Pandas, SQL‑style logic, data modelling, and Power BI** while telling a clear business story.
 
 ---
 
-# 🟦 **2. Match & Player Analytics Dashboard**
+# 📁 **Project Structure**
 
-This page focuses on match activity and player involvement.
+```
+sports-tech-analytics/
+│
+├── data/
+│   ├── platform_logs.csv
+│   ├── sports_events.csv
+│   └── user_activity.csv
+│
+├── notebooks/
+│   ├── data_generation.ipynb
+│   └── eda_kpis.ipynb
+│
+├── dashboard/
+│   └── sports_tech_analytics.pbix
+│
+└── README.md
+```
 
-### **Key Visuals**
-- **Events by Type**  
-  Breakdown of passes, shots, tackles, and sprints.
+---
 
+# 🧪 **1. Data Generation (Python)**
+
+All datasets are created programmatically using Python to simulate realistic behaviour:
+
+### **platform_logs.csv**
+Simulates system performance:
+- timestamps  
+- latency (ms)  
+- API endpoints  
+- success/error status  
+- error types  
+
+### **sports_events.csv**
+Simulates match activity:
+- passes  
+- shots  
+- tackles  
+- sprints  
+- match IDs  
+- player IDs  
+- event timestamps  
+
+### **user_activity.csv**
+Simulates platform usage:
+- user roles (coach, player, analyst)  
+- actions (login, upload, review, annotate)  
+- timestamps  
+
+This approach demonstrates the ability to **design datasets**, **control distributions**, and **model real‑world behaviour**.
+
+---
+
+# 📊 **2. Exploratory Data Analysis (EDA)**
+
+The EDA notebook calculates key performance indicators across three domains:
+
+### **Platform KPIs**
+- Uptime %  
+- Average latency  
+- Error rate  
+- Errors by endpoint  
+
+### **Match & Player KPIs**
+- Events per match  
+- Events by type  
+- Events per player  
+
+### **User Engagement KPIs**
+- Daily active users  
+- Actions by role  
+- Actions by type  
+
+The notebook includes sanity‑check charts to validate data quality and behaviour patterns.
+
+---
+
+# 🧠 **3. Data Modelling & Measures (Power BI)**
+
+Power BI is used to build a clean, three‑page analytics dashboard.  
+Custom DAX measures include:
+
+- **Uptime %**  
+- **Average Latency (ms)**  
+- **Error Rate %**  
+- **Daily Active Users**  
 - **Events per Match**  
-  Shows which matches had the highest activity levels.
 
-- **Events per Player**  
-  Highlights the most active players across all matches.
-
-### **Filters**
-- **Match filter**  
-- **Player filter**
-
-### **Why It Matters**
-This page simulates real sports‑performance analytics used by coaching and analyst teams to understand match intensity and player workload.
+The model is intentionally simple and domain‑separated to reflect real monitoring dashboards.
 
 ---
 
-# 🟦 **3. User Activity Dashboard**
+# 📈 **4. Dashboard Pages**
 
-This page tracks how different user groups interact with the platform.
+## 🟦 **Platform Health**
+Monitors system reliability and performance.
 
-### **Key Visuals**
-- **Daily Active Users (Line Chart)**  
-  Shows engagement trends over time.
+**Includes:**
+- Uptime %  
+- Average Latency  
+- Error Rate %  
+- Latency Over Time  
+- Errors by Endpoint  
 
-- **Actions by Role**  
-  Compares activity levels between coaches, players, and analysts.
+**Business value:** mirrors real DevOps/SRE monitoring.
 
-- **Actions by Type**  
-  Shows the most common platform actions (login, upload, review, annotate).
+---
 
-### **Filter**
-- **Role filter**
+## 🟦 **Match & Player Analytics**
+Analyses match intensity and player workload.
 
-### **Why It Matters**
-This page mirrors SaaS user‑engagement dashboards, helping product teams understand behaviour patterns and feature usage.
+**Includes:**
+- Events by Type  
+- Events per Match  
+- Events per Player  
+- Match & Player slicers  
 
+**Business value:** supports coaching and performance analysis.
+
+---
+
+## 🟦 **User Activity**
+Tracks platform engagement and behaviour.
+
+**Includes:**
+- Daily Active Users  
+- Actions by Role  
+- Actions by Type  
+- Role slicer  
+
+**Business value:** mirrors SaaS user‑engagement dashboards.
+
+---
+
+# 🧩 **5. Skills Demonstrated**
+
+### **Technical**
+- Python (Pandas, NumPy, datetime)
+- Data generation & simulation
+- Exploratory data analysis
+- KPI development
+- Power BI modelling & DAX
+- Dashboard design
+- Data storytelling
+
+### **Business**
+- Platform performance monitoring  
+- Sports analytics  
+- User engagement analysis  
+- Operational insights  
+- Stakeholder‑friendly reporting  
+
+---
+
+# ▶️ **6. How to Run This Project**
+
+### **1. Clone the repository**
+```
+git clone <your-repo-url>
+```
+
+### **2. Run the data generation notebook**
+Generates all CSVs into `/data`.
+
+### **3. Run the EDA notebook**
+Calculates KPIs and validates data.
+
+### **4. Open the Power BI file**
+```
+dashboard/sports_tech_analytics.pbix
+```
+
+Refresh the data source if needed.
+
+---
+
+# 🎯 **7. Project Summary**
+
+This project demonstrates the ability to:
+
+- Build a complete analytics pipeline from scratch  
+- Simulate realistic datasets for testing and portfolio work  
+- Develop KPIs that reflect real operational and sports‑tech environments  
+- Design clean, professional dashboards  
+- Communicate insights clearly and visually  
+
+It reflects the type of work done in **data analytics, BI, product analytics, and sports performance roles**.
