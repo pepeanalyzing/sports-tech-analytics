@@ -1,5 +1,7 @@
 
-# 🏟️ **Sports Tech Analytics — End‑to‑End Data Project**
+🏟️ SPORTS TECH ANALYTICS
+Synthetic Data • Python • Pandas • EDA • KPIs • Power BI
+
 
 This project simulates a real sports‑tech analytics environment by generating synthetic platform logs, match events, and user activity data.  
 It demonstrates a full analytics workflow — from data generation and processing to KPI development and dashboard reporting.
