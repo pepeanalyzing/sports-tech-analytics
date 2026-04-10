@@ -183,6 +183,17 @@ dashboard/sports_tech_analytics.pbix
 
 Refresh the data source if needed.
 
+## 📸 Dashboard Previews
+
+### Platform Health
+![Platform Health](screenshots/platform_health.png)
+
+### Match & Player Analytics
+![Match & Player Analytics](screenshots/match_player_analytics.png)
+
+### User Activity
+![User Activity](screenshots/user_activity.png)
+
 ---
 
 # 🎯 **7. Project Summary**
