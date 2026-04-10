@@ -183,7 +183,7 @@ dashboard/sports_tech_analytics.pbix
 
 Refresh the data source if needed.
 
-## 📸 Dashboard Previews
+## 📸 **7. Dashboard Previews
 
 ### Platform Health
 ![Platform Health](screenshots/platform_health.png)
@@ -196,7 +196,7 @@ Refresh the data source if needed.
 
 ---
 
-# 🎯 **7. Project Summary**
+# 🎯 **8. Project Summary**
 
 This project demonstrates the ability to:
 
