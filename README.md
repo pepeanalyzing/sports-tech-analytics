@@ -10,7 +10,18 @@ The goal is to showcase practical skills across **Python, Pandas, SQL‑style lo
 
 ---
 
-# 📁 **Project Structure**
+## 🧵 Project Summary
+
+This project delivers a complete, end‑to‑end sports‑tech analytics solution built from scratch using Python, Pandas, synthetic data generation, exploratory analysis, KPI development, and Power BI dashboards. It simulates a realistic environment where a sports‑tech platform must monitor system performance, analyse match activity, and understand user engagement across coaches, players, and analysts.
+
+Three custom datasets were generated programmatically to mirror real‑world behaviour: platform logs (uptime, latency, errors), sports event streams (passes, shots, sprints, tackles), and user activity (logins, uploads, reviews, annotations). These datasets were explored through a structured EDA process to validate patterns, calculate KPIs, and prepare insights for dashboard reporting.
+
+The final Power BI dashboard is organised into three pages — Platform Health, Match & Player Analytics, and User Activity — each designed to support different stakeholder groups. Together, they provide a unified view of operational performance, player workload, and platform engagement, demonstrating how analytics can drive decision‑making across engineering, coaching, and product teams.
+
+This project showcases strong technical capability (Python, Pandas, DAX, data modelling), clear analytical thinking, and the ability to communicate insights visually and professionally — the same skills required in real analytics, BI, and product‑focused roles.
+
+
+## 📁 **Project Structure**
 
 ```
 sports-tech-analytics/
